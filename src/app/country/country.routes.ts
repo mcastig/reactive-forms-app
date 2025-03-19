@@ -4,12 +4,7 @@ import { CountryPageComponent } from './pages/country-page/country-page.componen
 export const countryRoutes: Routes = [
   {
     path: '',
-    children: [
-      {
-        path: 'sign-up',
-        component: CountryPageComponent
-      }
-    ]
+    component: CountryPageComponent
   }
 ];
 

@@ -35,10 +35,7 @@ export class FormUtils {
     );
   }
 
-  static getFieldErrorInArray(
-    formArray: FormArray,
-    index: number
-  ): string | null {
+  static getFieldErrorInArray(formArray: FormArray, index: number): string | null {
     if (formArray.controls.length === 0) return null;
 
     const errors = formArray.controls[index].errors ?? {};
